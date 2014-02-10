@@ -55,6 +55,9 @@ public class Meteor : MonoBehaviour {
             //audio.PlayOneShot(explosion);
             Instantiate(explosionParticle, transform.position, transform.rotation);
 
+            if(coll.gameObject.tag == "Player")
+            Die.gotHit = true;
+
             Destroy(this.gameObject);
         }
     }

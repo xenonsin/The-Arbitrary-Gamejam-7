@@ -4,11 +4,13 @@ using System.Collections;
 public class Die : MonoBehaviour {
 
     public static bool isAlive;
+    public static bool gotHit;
     public AudioClip dead;
 
 	// Use this for initialization
 	void Start () {
         isAlive = true;
+        gotHit = false;
 	}
 	
 	// Update is called once per frame
